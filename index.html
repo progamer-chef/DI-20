@@ -1,0 +1,102 @@
+<head>
+  <title>
+    3
+  </title>
+  <style>
+    @keyframes textColorChange {
+      0% {
+        color: rgb(255, 0, 255);
+      }
+
+      25% {
+        color: #62ffff;
+      }
+
+      50% {
+        color: #2ce100;
+      }
+
+      75% {
+        color: hsl(41, 100%, 17%);
+      }
+
+      100% {
+        color: hsl(133, 36%, 70%);
+      }
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      /* Ensures the body can expand with content */
+      background-image: url('https://www.asbestos.com/wp-content/uploads/05_Crushing_Unrefined_Asbestos.gif');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      font-family: "Times New Roman", serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      overflow-y: auto;
+      /* Allows scrolling if content exceeds viewport */
+    }
+
+    .text {
+      display: block;
+      max-width: 90%;
+      margin: 20px 0;
+      animation: textColorChange 5s infinite;
+    }
+
+    .text-2 {
+      display: block;
+      max-width: 90%;
+      margin: 20px 0;
+      animation: textColorChange 3s infinite;
+      flex: 0 0 auto;
+      /* Prevents .text-2 from growing or shrinking */
+    }
+
+    .next-button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: hsl(225, 100%, 74%);
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .next-button:hover {
+      background-color: hsl(227, 84%, 51%);
+    }
+  </style>
+</head>
+<body>
+  <div class="text">
+    <b>Just like there’s a lot I love about this page’s sponsor:</b><br>
+    <i style="font-size:80px;">Asbestos!</i>
+  </div>
+  <div class="text-2" style="font-size:30px">
+This segment is brought to you by our friends at AsbestosDabestos! Inc.,<br><br> who know that progress isn’t always pretty, but it sure is durable.
+So, what’s the deal with asbestos? Well, imagine a material so versatile it’s been used in everything from fireproofing skyscrapers to making brake pads safer and more efficient. It’s naturally heat-resistant, incredibly strong, and—let’s not forget—affordable! That’s right, folks: asbestos is nature’s little gift to industries that demand toughness and reliability. While other materials might flake under pressure (pun intended), asbestos stays strong, holding the world together, one reinforced cement sheet at a time. <br><br>
+Sure, there have been whispers over the years about asbestos being “problematic,” but isn’t that true of all great innovators? Sometimes, the materials that keep society moving forward get a bad rap for, you know, details. The fact remains: asbestos is unmatched in its ability to deliver results in construction, automotive, and manufacturing. It’s like the workhorse of materials—quietly dependable, endlessly versatile, and completely irreplaceable.
+    <br><br>
+A huge thank-you to AbestosDabestos for sponsoring this celebration of asbestos and its legacy of industrial greatness. They’re here to remind us that while trends come and go, asbestos has always been the reliable choice for the world’s toughest jobs. So the next time you see a fireproof wall or a sturdy building that’s stood for decades, give a little nod of appreciation to the unsung hero that made it possible.
+Visit your nearest asbestos plant using my link to buy some for the whole family!
+ <br style="font-size:10px">
+    <a href="https://illinoiscancerspecialists.com/">CLICK HERE!!!</a>
+  </div>
+  <button class="next-button" onclick="navigateToNextPage()">Next</button>
+
+  <script>
+    function navigateToNextPage() {
+      window.location.href = "https://www.example.com"; // Replace with your desired URL
+    }
+  </script>
+</body>
