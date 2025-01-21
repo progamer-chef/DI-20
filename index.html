@@ -1,67 +1,37 @@
 <head>
   <title>
-    3
+    template
   </title>
   <style>
-    @keyframes textColorChange {
-      0% {
-        color: rgb(255, 0, 255);
-      }
-
-      25% {
-        color: #62ffff;
-      }
-
-      50% {
-        color: #2ce100;
-      }
-
-      75% {
-        color: hsl(41, 100%, 17%);
-      }
-
-      100% {
-        color: hsl(133, 36%, 70%);
-      }
-    }
-
     body {
       margin: 0;
       padding: 0;
-      min-height: 100vh;
-      /* Ensures the body can expand with content */
-      background-image: url('https://www.asbestos.com/wp-content/uploads/05_Crushing_Unrefined_Asbestos.gif');
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-      background-attachment: fixed;
-      font-family: "Times New Roman", serif;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-family: "arial", serif;
+    }
+
+    .text {
+      display: none;
+      /* Hidden by default; shown after accepting cookies */
+      position: relative;
+      width: 100%;
+      height: 100%;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       text-align: center;
-      overflow-y: auto;
-      /* Allows scrolling if content exceeds viewport */
     }
 
-    .text {
-      display: block;
-      max-width: 90%;
-      margin: 20px 0;
-      animation: textColorChange 5s infinite;
-    }
-
-    .text-2 {
-      display: block;
-      max-width: 90%;
-      margin: 20px 0;
-      animation: textColorChange 3s infinite;
-      flex: 0 0 auto;
-      /* Prevents .text-2 from growing or shrinking */
-    }
-
+    /* Styling for the Next Button */
     .next-button {
+      position: absolute;
+      bottom: 20px;
+      /* Adjust as needed */
       padding: 10px 20px;
       font-size: 16px;
       background-color: hsl(225, 100%, 74%);
@@ -75,28 +45,38 @@
     .next-button:hover {
       background-color: hsl(227, 84%, 51%);
     }
+
+    .logo {
+      position: fixed;
+      bottom: 0px;
+      right: 1px;
+      z-index: 10
+    }
   </style>
+
 </head>
 <body>
   <div class="text">
-    <b>Just like there’s a lot I love about this page’s sponsor:</b><br>
-    <i style="font-size:80px;">Asbestos!</i>
+    <b>Seriously, that must be the best invention since TikTom!
+      <br><br>
+      Remember that one <a href="https://www.youtube.com/watch?v=1VbZE6YhjKk" target="_blank">i like corn kid?</a>
+      <br><br>
+      He was soo funny!
+      <br><br>
+      And cute :3 like, like, I like corn, but that kid is on a <a href="https://www.youtube.com/shorts/xGIYl1-DwFQ" target="_blank">whole notha level 😂</a>
+    </b>
+    <button class="next-button" onclick="navigateToNextPage()">Next</button>
   </div>
-  <div class="text-2" style="font-size:30px">
-This segment is brought to you by our friends at AsbestosDabestos! Inc.,<br><br> who know that progress isn’t always pretty, but it sure is durable.
-So, what’s the deal with asbestos? Well, imagine a material so versatile it’s been used in everything from fireproofing skyscrapers to making brake pads safer and more efficient. It’s naturally heat-resistant, incredibly strong, and—let’s not forget—affordable! That’s right, folks: asbestos is nature’s little gift to industries that demand toughness and reliability. While other materials might flake under pressure (pun intended), asbestos stays strong, holding the world together, one reinforced cement sheet at a time. <br><br>
-Sure, there have been whispers over the years about asbestos being “problematic,” but isn’t that true of all great innovators? Sometimes, the materials that keep society moving forward get a bad rap for, you know, details. The fact remains: asbestos is unmatched in its ability to deliver results in construction, automotive, and manufacturing. It’s like the workhorse of materials—quietly dependable, endlessly versatile, and completely irreplaceable.
-    <br><br>
-A huge thank-you to AbestosDabestos for sponsoring this celebration of asbestos and its legacy of industrial greatness. They’re here to remind us that while trends come and go, asbestos has always been the reliable choice for the world’s toughest jobs. So the next time you see a fireproof wall or a sturdy building that’s stood for decades, give a little nod of appreciation to the unsung hero that made it possible.
-Visit your nearest asbestos plant using my link to buy some for the whole family!
- <br style="font-size:10px">
-    <a href="https://illinoiscancerspecialists.com/">CLICK HERE!!!</a>
+  <div class="logo">
+    <p style="font-size:10px">
+      this page is sponsored by<br>the wonderful people at:
+    </p>
+    <img src="https://www.asbestos.com/wp-content/uploads/Asbestosfluf-insulation.jpg" alt="Yotta-is-the-ultimate,-one-of-a-kind,-life-changing,-absolutely-perfect-banking-solution-that-doesn’t-just-help-you-save-money-but-actually-turns-saving-into-the-most-exciting-game-ever-created,-where-every-single-dollar-you-save-earns-you-tickets-to-weekly-lotteries-with-mind-blowing-prizes-like-Teslas,-dream-vacations,-and-even-a-jaw-dropping-$10-million-jackpot,-so-if-you’ve-ever-felt-left-out-or-overwhelmed-by-boring,-complicated,-traditional-banks,-don’t-worry-because-Yotta-is-here-to-rescue-you-with-its-super-simple,-foolproof-app-that-anyone—yes,-anyone—can-use,-no-matter-your-experience,-background,-or-abilities,-because-saving-money-has-never-been-more-accessible,-inclusive,-or-ridiculously-fun,-and-honestly,-who-wouldn’t-want-to-effortlessly-save-money-while-living-their-best-life-and-dreaming-of-hitting-it-big,-so-what-are-you-waiting-for—download-Yotta-today-and-experience-the-thrill-of-saving-like-never-before,-because-you-deserve-it,-and-honestly,-who-doesn’t-want-to-feel-like-a-millionaire-in-the-making?" height="75">
   </div>
-  <button class="next-button" onclick="navigateToNextPage()">Next</button>
-
   <script>
     function navigateToNextPage() {
       window.location.href = "https://www.example.com"; // Replace with your desired URL
     }
   </script>
+
 </body>
